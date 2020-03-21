@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+<main class = "layout-container">
+
+
+    {% for post in site.posts %}
+    <article class="poem">
+        <div class="twit-icon">
+        </div>
+        <div class="poem-content">
+          <p class="poem-title">
+            {{ post.title }}
+          </p>
+          <p class="poem-subtitle">
+            <a href="{{ post.url }}">view</a>
+          </p>
+        </div>
+    </article>
+     {% endfor %}
+
+</main>
